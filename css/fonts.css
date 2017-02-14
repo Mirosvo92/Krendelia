@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "ametist-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ametist-webfont.ttf');
+  }
+@font-face {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/fontello.ttf');
+  }
+@font-face {
+  font-family: "slick";
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/slick.ttf');
+  }
+@font-face {
+  font-family: "vkorin-webfont";
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/vkorin-webfont.ttf');
+  }
+  
+  
+  @font-face {
+  font-family: "kz";
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/kz.ttf');
+  }
+

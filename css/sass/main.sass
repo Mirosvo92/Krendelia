@@ -1,0 +1,1632 @@
+@import url(reset.css)
+
+$ametist-webfont: "ametist-webfont"
+$fontello: "fontello"
+$slick: "slick"
+$vkorin-webfont: "vkorin-webfont"
+
+
+
+html 
+	display: flex
+	flex-direction: column
+	
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner
+	background-image: url("../img/preloader.gif")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 70px
+	width: 70px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+
+//header
+	
+#main_head
+	width: 100%
+	background-image: url(../img/head_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	min-height: 571px
+
+ 
+//first navigation
+.first_nav_bg
+	background-image: url(../img/bg_nav.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+.first_nav_wrap
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	
+.first_nav
+	max-width: 770px
+	width: 100%
+
+
+	
+.first_nav li
+	display: inline-block
+	padding: 14px 0
+	
+	
+.first_nav ul
+	display: flex
+	justify-content: space-around
+
+	
+.first_nav li a
+	text-transform: uppercase
+	text-decoration: none
+	color: #ffffff
+	font: 16px "Korinna" 
+	font-weight: 500
+	
+.first_nav li a:hover
+	color: #55c5d0
+	
+	
+.first_nav li:after
+	content: ""
+	background-image: url(../img/after_list.png)
+	background-repeat: no-repeat
+	color: #fff
+	position: absolute
+	height: 19px
+	top: 16px
+	width: 10px
+	margin-left: 20px
+	
+	
+.first_nav ul li:last-child:after
+	content: ""
+	background: none
+	
+//when width < 768px
+.hidden_menu
+	display: none
+	
+.hidden_menu span
+	color: #ffffff
+	font: 18px "Korinna" 
+	font-weight: 500
+	text-decoration: none
+	text-transform: uppercase
+	
+//stop scroll
+
+.scroll-hidden 
+	overflow-y: hidden
+	
+	
+	
+
+.hidden_menu span:hover
+	cursor: pointer
+	color: #55c5d0
+	
+
+.hidden_menu span:after
+	content: "\2630"
+	margin-left: 10px
+	
+//head_info_wrap(logo, load, h1)
+
+.head_info_wrap
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+
+	
+.logo
+	padding: 58px 0
+
+//text_head
+
+.biznes_text
+	font-family: $ametist-webfont
+	font-size: 40px
+	color: #fff
+	
+.between_logo
+	padding: 19px 0px
+	
+.load_prez
+	background-image: url(../img/but_load.png)
+	background-repeat: no-repeat
+	padding: 13px 44px
+	text-decoration: none
+	color: #fff
+	font-family: $ametist-webfont
+	font-size: 14px
+	font-family: Korinna
+	&:hover
+		color: #4682B4
+			
+			
+	
+.about_biznes
+	font-size: 18px
+	color: #fff
+	padding-bottom: 32px
+
+	
+//main nav
+
+#main_navigation
+	background-image: url(../img/bg_nav.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+	
+	
+
+	
+.main_nav_wrap
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	max-height: 70px
+	
+.address
+	flex-basis: 220px
+	padding: 15px 15px 15px 15px
+
+.address h3
+	font-size:  1.1vw
+	font-family: Roboto Medium
+	color: #ffffff
+
+
+.address p
+	padding-top: 10px
+	color: #ffffff
+	font-size:  1.1vw
+
+.address p span
+	font-family: Roboto Medium
+	font-weight: 500
+	
+
+
+	
+//main_nav
+
+.main_nav
+	flex-basis: 715px
+	
+
+.list_main_nav
+	display: flex
+	justify-content: space-around
+	position: relative
+	
+
+
+.list_main_nav li a
+	text-decoration: none
+	text-transform: uppercase
+	color: #ffffff
+	font: 16px "Korinna" 
+	font-weight: 500
+	
+.list_main_nav li a:hover
+	color: #55c5d0
+	
+	
+.list_main_nav li
+	display: inline-block
+	padding: 27px 0
+	
+.list_main_nav li:after
+	content: ""
+	background-image: url(../img/after_list.png)
+	background-repeat: no-repeat
+	color: #fff
+	position: absolute
+	height: 19px
+	top: 27px
+	width: 10px
+	margin-left: 2%
+
+.list_main_nav	li
+	&:nth-child(5):after
+		content: ""
+		background: none
+		opacity: 0
+	&:nth-child(6):after
+		content: ""
+		background: none
+		opacity: 0
+	
+	
+.test:after
+	content: ""
+	background: none
+	opacity: 0
+	
+//tel_mail	
+.tel_mail
+	padding: 15px 0px 15px 25px
+	text-align: left
+	flex-basis: 200px
+	
+
+
+.tel
+	a
+		color: #fff
+		font-size: 1.5vw
+		font-family: Roboto
+		text-decoration: none
+		&:hover
+			color: #4682B4
+
+.mail
+	color: #fff
+	font-size: 1.05vw
+	font-family: Roboto Medium
+	padding: 5px 0px
+	
+
+.mail a
+	font-family: Roboto Light
+	color: #fff
+	&:hover
+		color: #4682B4
+	
+
+//hidden_main_menu
+
+.hidden_main_menu
+	display: none
+	
+.hidden_main_menu span
+	font-size: 24px
+	color: #fff
+	cursor: pointer
+		
+		
+	
+.hidden_main_menu span:after
+	content: "\2630"
+	margin-left: 10px
+			
+		
+		
+.close_hidden_main_menu
+	display: none
+	position: fixed
+	color: #fff
+	left: 82%
+	right: 0px
+	top: 4%
+	font-size: 40px
+	cursor: pointer
+	
+
+#the_most_recognizable
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	h2
+		font-size: 24px
+		font-family: $ametist-webfont
+		max-width: 1030px
+		width: 100%
+		padding: 53px 0px 0px 0px
+		
+		
+	
+.about_visitor
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	max-width: 1100px
+	width: 100%
+
+
+	
+.visitor1,.visitor2,.visitor3,.visitor4
+	position: relative
+	flex-basis:  275px
+	font-family: $ametist-webfont
+	text-align: center
+	margin-top: 25px
+	h3
+		margin-top: 23px
+	
+
+.visitor1
+	h3
+		max-width: 275px
+		width: 100%
+		margin: auto
+		font-size: 18px
+		padding-top: 25px
+	
+	p
+		position: absolute
+		color: #fff
+		width: 125px
+		font-size: 35px
+		&:nth-child(2)
+			top: 31%
+			left: 27%
+			font-size: 35px
+		&:nth-child(3)
+			top: 42%
+			left: 28%
+			font-size: 20px
+	
+	
+
+.visitor2
+	h3
+		max-width: 206px
+		width: 100%
+		margin: auto
+		font-size: 18px
+		padding-top: 25px
+	
+	p
+		position: absolute
+		color: #fff
+		width: 125px
+		font-size: 35px
+		&:nth-child(2)
+			top: 31%
+			left: 25%
+			font-size: 35px
+		&:nth-child(3)
+			top: 42%
+			left: 28%
+			font-size: 20px
+				
+
+.visitor3
+	h3
+		max-width: 270px
+		width: 100%
+		margin: auto
+		font-size: 18px
+		padding-top: 25px
+	
+	p
+		position: absolute
+		color: #fff
+		width: 150px
+		font-size: 35px
+		&:nth-child(2)
+			top: 31%
+			left: 22%
+			font-size: 35px
+		&:nth-child(3)
+			top: 42%
+			left: 22%
+			font-size: 20px	
+
+.visitor4
+	h3
+		max-width: 201px
+		width: 100%
+		margin: auto
+		font-size: 18px
+		padding-top: 25px
+	
+	p
+		position: absolute
+		color: #fff
+		width: 125px
+		font-size: 35px
+		&:nth-child(2)
+			top: 31%
+			left: 27%
+			font-size: 35px
+		&:nth-child(3)
+			top: 42%
+			left: 28%
+			font-size: 20px
+			
+#people_think
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	max-width: 1170px
+	width: 100%
+	margin: 74px auto 0
+	text-align: center
+	h3
+		font-size: 30px
+		font-family: $ametist-webfont
+		max-width: 538px
+		width: 100%
+	
+		
+.video_people_think
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	width: 100%
+	video
+		max-width: 370px
+		width: 100%
+		max-height: 214px
+		border-radius: 5px
+		padding-top: 15px 
+		
+		
+//how to make
+
+#how_to_make 
+	display: flex
+	margin-top: 80px
+	min-height: 423px
+	
+
+.left_how_to_make
+	max-width: 50%
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	background-image: url(../img/bg_how_to_make_left.png)
+	background-position-x: 96%
+	background-position-y: 50%
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 423px
+	
+
+.content_left_to_make
+	max-width: 585px
+	width: 100%
+	margin: 0
+	padding: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+	h2
+		font-size: 30px
+		font-family: $ametist-webfont
+	p
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 24px
+		text-align: center
+		max-width: 520px
+		padding: 20px 10px 0px 10px
+	
+	img
+		padding-top: 20px
+	a
+		background-image: url(../img/but_load.png)
+		background-repeat: no-repeat
+		padding: 13px 55px
+		text-decoration: none
+		color: #fff
+		font-family: $ametist-webfont
+		font-size: 14px
+		font-family: Korinna
+		margin: 37px 0px 18px
+		&:hover
+			color: #4682B4 
+	
+	
+	
+	
+	
+.right_how_to_make
+	max-width: 50%
+	width: 50%
+	display: flex
+	justify-content: flex-start
+	background-image: url(../img/bg_how_to_make_right.png)
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 423px
+
+
+
+.content_right_to_make
+	max-width: 585px
+	width: 100%
+	margin: 0
+	padding: 0
+	display: flex
+	img
+		margin: auto
+
+
+//submit_application
+
+#submit_application
+	background-image: url(../img/bg_submit_application.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	width: 100%
+	min-height: 367px
+	display: flex
+	flex-direction: column
+	.wrap_submit_application
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		h2
+			font-size: 30px
+			font-family: $ametist-webfont
+			color: #fff
+			padding-top: 50px
+		h3
+			font-size: 18px
+			font-family: Roboto Light
+			padding-top: 12px
+			color: #55c5d0
+
+
+			
+			
+			
+.main_form
+	border: 2px solid #fff
+	padding: 30px 0px 30px 0px
+	border-radius: 5px
+	box-shadow: 0px 0px 3px 1px #fff
+	margin-top: 32px
+	max-width: 685px
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	position: relative
+	button
+		border: none
+		padding: 0 60px
+		height: 41px
+		font-size: 14px
+		font-family: Korinna
+		color: #fff
+		cursor: pointer
+		margin-top: 25px
+		&:hover
+			color: #4682B4
+		
+.corn
+	position: absolute
+	top: 70%
+	left: 59%
+	
+		
+	
+.submit_input
+	display: inline-block
+	max-width: 263px
+	width: 100%
+	margin-right: 17px
+	background-color: transparent
+	line-height: 35px
+	padding-left: 21px
+	color: #fff
+	border: 1px solid #fff
+	border-radius: 3px
+	
+	
+
+
+	
+.submit_input_2
+	display: inline-block
+	max-width: 263px
+	width: 100%
+	background-color: transparent
+	line-height: 35px
+	padding-left: 21px
+	color: #fff
+	border: 1px solid #fff
+	border-radius: 3px
+
+	
+::-moz-placeholder 
+	color: #fff
+	opacity: 1
+	font-size: 14px
+	font-family: Korinna
+
+::-webkit-input-placeholder
+	color: #fff
+	font-size: 14px
+	font-family: Korinna
+	
+	
+//photo_and_price
+
+.photo_price
+	width: 100%
+	min-height: 580px
+	display: flex
+	
+.left_wrap
+	max-width: 50%
+	width: 50%
+	display: flex
+	justify-content: flex-end
+	
+.right_wrap
+	max-width: 50%
+	width: 50%
+	display: flex
+	justify-content: flex-start
+	
+	
+	
+.photo_price1_left
+	background-image: url(../img/photo_bg_price.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	height: 580px
+	
+	
+.content_wrap
+	max-width: 585px
+	width: 100%
+	margin: 0
+	padding: 0
+
+	
+.price_table p
+	display: block
+	padding: 0px
+	margin: 0px
+	
+.photo_price1_right
+	background-image: url(../img/bg_price.png)
+	background-repeat: no-repeat
+	background-size: cover
+	height: 580px
+	
+.price
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	min-height: 600px
+	h2
+		font-size: 30px
+		font-family: $ametist-webfont
+		padding: 40px 0px 30px 0px
+	img
+		padding-bottom: 30px
+		
+
+.price_table
+	max-width: 490px
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	margin-left: 90px
+	padding-right: 15px
+
+.place
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+
+	
+	
+.price_table_indent
+	border-bottom:  0.1px dashed #dcdcdc
+	padding: 8px 0px 8px 0px
+	
+	
+	
+.place > p:before
+	content: ""
+	background-image: url(../img/place.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.place p
+	&:nth-child(2)
+		font-family: Roboto
+
+		
+.area
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.area > p:before
+	content: ""
+	background-image: url(../img/area.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.area p
+	&:nth-child(2)
+		font-family: Roboto
+	
+.count_sit_place
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+	
+.count_sit_place
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.count_sit_place > p:before
+	content: ""
+	background-image: url(../img/count_sit_place.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.count_sit_place p
+	&:nth-child(2)
+		font-family: Roboto
+
+
+.diagram
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.diagram > p:before
+	content: ""
+	background-image: url(../img/diagram.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.diagram p
+	&:nth-child(2)
+		font-family: Roboto
+
+		
+.roilt
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.roilt > p:before
+	content: ""
+	background-image: url(../img/roal.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.roilt p
+	&:nth-child(2)
+		font-family: Roboto
+		
+		
+		
+.payment
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.payment > p:before
+	content: ""
+	background-image: url(../img/head_icon.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.payment p
+	&:nth-child(2)
+		font-family: Roboto
+		
+		
+		
+.time
+	display: flex
+	justify-content: space-between
+	position: relative
+	font-size: 14px
+	font-family: Roboto Light
+	max-width: 490px
+	width: 100%
+	
+.time > p:before
+	content: ""
+	background-image: url(../img/time_icon.png)
+	background-repeat: no-repeat
+	position: absolute
+	width: 12px
+	height: 16px
+	top: 8px
+	left: -30px
+	
+.time p
+	&:nth-child(2)
+		font-family: Roboto
+		
+
+.want_cafe
+	padding: 13px 37px
+	margin: 10px auto
+	background-image: url(../img/but_load.png)
+	background-repeat: no-repeat
+	text-decoration: none
+	color: #ffffff
+	font-family: Korinna
+	&:hover
+		color: #4682B4
+		
+		
+//photo_and_price2
+
+.photo_price2_right
+	background-image: url(../img/photo_bg_price.png)
+	background-position-x: 0%
+	background-position-y: 50%
+	background-repeat: no-repeat
+	background-size: cover
+	height: 580px
+		
+.photo_price2_left
+	background-image: url(../img/bg_inLine.png)
+	background-position-x: 96%
+	background-position-y: 50%
+	background-repeat: no-repeat
+	background-size: cover
+	height: 580px
+	
+		
+		
+.inline
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	h2
+		font-size: 30px
+		font-family: $ametist-webfont
+		padding: 40px 0px 30px 0px
+	img
+		padding-bottom: 30px
+		
+.price_table2
+	max-width: 490px
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	padding-right: 15px
+	
+.want_cafe2
+	padding: 13px 37px
+	margin: 25px auto
+	background-image: url(../img/but_load.png)
+	background-repeat: no-repeat
+	text-decoration: none
+	color: #ffffff
+	font-family: Korinna
+	&:hover
+		color: #4682B4
+		
+		
+//included_in_the_package
+
+#included_in_the_package
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	h2
+		font-size: 30px
+		font-family: $ametist-webfont
+		padding-top: 73px
+	h3
+		font-size: 16px
+		font-family: Roboto Light
+		max-width: 940px
+		padding-top: 25px
+		margin: 0px 20px
+
+		
+.descript_biz
+	max-width: 1170px
+	width: 100%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around
+	margin-top: 35px
+	
+		
+	
+
+			
+			
+			
+.coffee_mach_wrap
+	position: relative
+	text-align: center
+	max-width: 170px
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 20px
+	p
+		font-size: 15px
+		font-family: Roboto Light
+		max-width: 132px
+		width: 100%
+		line-height: 21px
+		margin: 5px 3px 3px 5px
+	
+	
+.case_wrap
+	position: relative
+	text-align: center
+	max-width: 170px
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 20px
+	p
+		font-size: 15px
+		font-family: Roboto Light
+		max-width: 132px
+		width: 100%
+		line-height: 21px
+		margin: 5px 3px 3px 5px
+
+
+
+.coffe_m
+	position: absolute
+	top: 15%
+	left: 34%
+	
+		
+		
+.case
+	position: absolute
+	top: 19%
+	left: 33%
+	
+.list_wrap
+	position: relative
+	text-align: center
+	max-width: 170px
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 20px
+	p
+		font-size: 15px
+		font-family: Roboto Light
+		max-width: 170px
+		width: 100%
+		line-height: 21px
+		margin: 5px 3px 3px 5px
+
+		
+.list
+	position: absolute
+	top: 14%
+	left: 37%		
+
+	
+.descript_biz2
+	max-width: 1170px
+	width: 100%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	
+#submit_application2
+	background-image: url(../img/bg_submit_application.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	width: 100%
+	min-height: 367px
+	.wrap_submit_application
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		h2
+			font-size: 30px
+			font-family: $ametist-webfont
+			color: #fff
+			padding-top: 50px
+		h3
+			font-size: 18px
+			font-family: Roboto Light
+			padding-top: 12px
+			color: #55c5d0
+
+//submit_application2
+
+#comment_of_owners
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	min-height: 620px
+	h2
+		font-size: 30px
+		color: #000000
+		margin-top: 75px
+		font-family: $ametist-webfont
+	
+
+.video_coment
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	max-width: 1170px
+	width: 100%
+	margin-top: 45px
+	.video_of_owners
+		max-width: 585px
+		video
+			max-width: 570px
+			width: 100%
+			max-height: 330px
+			padding-right: 8px
+	.coment
+		max-width: 585px
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		
+	
+
+	
+		
+		
+.im_wrap
+	position: relative
+	max-width: 110px
+	padding-left: 15px
+		
+		
+.photo_kl
+	min-width: 101px
+	min-height: 97px
+	position: absolute
+	background-image: url(../img/klient.png)
+	background-repeat: no-repeat
+	background-size: 274px 137px, cover
+	background-position-x: 40%
+	background-position-y: -1%
+	top: 8%
+	right: -1%
+	border-radius: 50px
+	
+	
+.FIO
+	display: flex
+	flex-direction: column
+	margin-left: 22px
+	max-height: 102px
+	justify-content: space-between
+	h4
+		font-size: 16px
+	h5
+		padding-top: 15px
+		font-size: 16px
+		font-family: Roboto Regular
+	p
+		font-size: 14px
+		font-family: Roboto Light
+	
+	
+.coment_about_biz
+	line-height: 24px
+	margin-top: 25px
+	padding-left: 15px
+	h3
+		font-size: 16px
+		font-family: Roboto
+	p
+		font-size: 14px
+		font-family: Roboto Light
+		
+#you_get
+	width: 100%
+	min-height: 475px
+	background-color: #f5f5fa
+	display: flex
+	text-align: center
+	h2
+		font-size: 30px
+		font-family: $ametist-webfont
+		padding-top: 50px
+	.wrap_you_get
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		
+		
+.list_you_get
+	min-height: 280px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding-top: 50px
+	
+
+.working1
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 210px
+	text-align: center
+	h4
+		padding-top: 20px
+		font-size: 20px
+		font-family: $ametist-webfont
+	p
+		padding-top: 30px
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 21px
+	
+	
+.working2
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 210px
+	text-align: center
+	h4
+		padding-top: 24px
+		font-size: 20px
+		font-family: $ametist-webfont
+	p
+		padding-top: 10px
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 21px
+		
+
+	
+.working3
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 210px
+	text-align: center
+	h4
+		padding-top: 34px
+		font-size: 20px
+		font-family: $ametist-webfont
+	p
+		padding-top: 10px
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 21px
+		
+		
+	
+.working4
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 210px
+	text-align: center
+	h4
+		padding-top: 31px
+		font-size: 20px
+		font-family: $ametist-webfont
+	p
+		padding-top: 29px
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 21px
+		
+.working5
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 210px
+	text-align: center
+	h4
+		padding-top: 21px
+		font-size: 20px
+		font-family: $ametist-webfont
+	p
+		padding-top: 8px
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 21px
+		
+//slide
+
+.sl_one
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	min-height: 620px
+	display: flex
+
+
+
+//contacts
+	
+	
+	
+#contacts
+	width: 100%
+	min-height: 475px
+	background-image: url(../img/bg_contact.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: 59%
+	background-position-y: 100%
+	display: flex
+	flex-direction: column
+	.wrap_contacts
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 400px
+		h2
+			font-size: 50px
+			font-family: $ametist-webfont
+			color: #fff
+			margin-top: 65px
+		h3
+			font-size: 50px
+			font-family: $ametist-webfont
+			color: #fff
+		p
+			font-size: 20px
+			color: #fff
+		
+			
+			
+		
+.cont_tel_mail
+	color: #fff
+	
+.cont_tel
+	a
+		font-size: 32px
+		color: #fff
+		text-decoration: underline
+	
+.m_col
+	color: fff
+	a
+		color: #55c5d0	
+		
+		
+	
+.send_app
+	background-image: url(../img/but_load.png)
+	background-repeat: no-repeat
+	background-size: cover
+	color: #fff
+	padding: 13px 56px
+	display: inline-table
+	max-width: 212px
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+		color: #4682B4
+
+//main_footer
+#main_footer
+	widows: 100%
+	min-height: 274px
+	background-image: url(../img/footer.png)
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	a
+		text-decoration: none
+		font-size: 16px
+		color: #fff
+		text-transform: uppercase
+		line-height: 24px
+		&:hover
+			text-decoration: underline
+			color: #55c5d0
+		
+
+.foot_wrap
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	min-height: 274px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	
+.foot_cont
+	max-width: 1170px
+	width: 100%
+	margin-top: 20px
+	display: flex
+	justify-content: space-between
+
+.log_foot
+	max-width: 170px
+	max-height: 88px
+	display: flex
+	
+	
+.foot_list1
+	display: flex
+	flex-direction: column
+	max-width: 168px
+
+
+	
+.foot_list2
+	display: flex
+	flex-direction: column
+	max-width: 180px
+	
+    
+	
+.foot_list3
+	max-width: 315px
+	min-height: 190px
+	display: flex
+	flex-direction: column
+	span
+		font-family: Roboto 
+	p
+		color: #ffffff
+		font-size: 14px
+		font-family: Roboto Light
+		line-height: 24px
+
+
+.foot_soc
+	display: flex
+	min-height: 30px
+	max-width: 205px
+	justify-content: space-between
+	margin-top: 15px
+
+	
+.inst
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 16%
+		left: 30%
+	
+	
+.vk
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 13%
+		left: 18%
+
+		
+.fb
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 16%
+		left: 32%
+				
+				
+				
+.ok
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 16%
+		left: 32%
+		
+		
+.yt
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 21%
+		left: 25%
+		
+		
+.wa
+	height: 30px
+	width: 30px
+	position: relative
+	background-color: #d4dfe3
+	border-radius: 100px
+	&:hover
+		background-color: #f5f5fa
+	a
+		position: absolute
+		top: 21%
+		left: 25%
+		
+		
+.com_raz
+	max-width: 1170px
+	display: flex
+	max-height: 37px
+	justify-content: space-between
+	p
+		font-size: 12px
+		font-family: Roboto Light
+		color: #ffffff
+	
+.copyright
+	padding-top: 7px
+	max-width: 270px
+
+	
+.raz
+	padding-bottom: 15px 
+	max-width: 50px
+
+	
+//animate
+.for_anim
+	animation-delay: .2s
+	animation-duration: .4s 
+	
+.an_right, .an_left
+	animation-delay: 1.1s
+	animation-duration: .4s 
+	
+.visitor1,.visitor2,.visitor3,.visitor4
+	animation-delay: .2s
+	animation-duration: .4s 
